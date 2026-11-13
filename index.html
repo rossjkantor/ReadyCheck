@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReadyCheck</title>
+<meta name="description" content="ReadyCheck learns what you need, checks whether you have it, and alerts you before you leave without it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="rc-root" data-rc-root>
+
+<div class="announce">ReadyCheck is in development. <a href="#waitlist">Join the waitlist</a></div>
+
+<header class="site-header" data-nav>
+  <nav class="site-nav" aria-label="Main">
+    <a class="brand" href="#top">
+      <svg width="34" height="34" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="11" fill="#2563EB"/><path d="M10 18.5l5 5 11-11" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>ReadyCheck</span>
+    </a>
+    <div class="nav-links">
+      <a class="navlink" href="#how">How it works</a>
+      <a class="navlink" href="#routines">Routines</a>
+      <a class="navlink" href="#demo">Try it</a>
+      <a class="navlink" href="#shop">Shop</a>
+      <a class="navlink" href="#faq">FAQ</a>
+      <a class="btn btn--primary btn--sm" href="#waitlist">Join the waitlist</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section id="top" class="hero" data-hero>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <div class="pill load" style="animation-delay:.1s"><span class="pulse-dot"></span>AI-powered prevention, not just tracking</div>
+      <h1>
+        <span class="mask"><span style="animation-delay:.15s">Never</span></span>
+        <span class="mask"><span style="animation-delay:.23s">leave</span></span>
+        <span class="mask"><span style="animation-delay:.31s">without</span></span>
+        <span class="mask"><span class="hl" style="animation-delay:.39s">what</span></span>
+        <span class="mask"><span class="hl" style="animation-delay:.47s">you</span></span>
+        <span class="mask"><span class="hl" style="animation-delay:.55s">need.</span></span>
+      </h1>
+      <p class="hero__sub load" style="animation-delay:.7s">ReadyCheck learns what you need, checks whether you have it, and alerts you before you leave without it.</p>
+      <div class="hero__ctas load" style="animation-delay:.85s">
+        <a class="btn btn--primary btn--lg" href="#waitlist">Join the waitlist</a>
+        <a class="btn btn--ghost btn--lg" href="#how">See how it works</a>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="zoom" style="animation-delay:.5s">
+        <span class="ring"></span><span class="ring ring--2"></span><span class="ring ring--3"></span>
+        <div class="hero__photo">Product photo: ReadyCheck sensor</div>
+      </div>
+      <div class="chip chip--1">
+        <span class="icon-dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        Keys detected
+      </div>
+      <div class="chip chip--2">
+        <span class="icon-dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        Laptop detected
+      </div>
+      <div class="chip chip--3">
+        <span class="icon-dot icon-dot--warn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v10"/><path d="M12 19v.01"/></svg></span>
+        Gym bag not detected
+      </div>
+    </div>
+    <div class="scroll-cue load" style="animation-delay:1.4s">Scroll<span class="scroll-cue__line"><span></span></span></div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <span>Keys</span><span class="marquee__dot"></span>
+      <span>Wallet</span><span class="marquee__dot"></span>
+      <span>Backpack</span><span class="marquee__dot"></span>
+      <span>Laptop</span><span class="marquee__dot"></span>
+      <span>Charger</span><span class="marquee__dot"></span>
+      <span>Gym bag</span><span class="marquee__dot"></span>
+      <span>Homework</span><span class="marquee__dot"></span>
+      <span>Never Leave Without What You Need</span><span class="marquee__dot"></span>
+    </div>
+    <div class="marquee__group">
+      <span>Keys</span><span class="marquee__dot"></span>
+      <span>Wallet</span><span class="marquee__dot"></span>
+      <span>Backpack</span><span class="marquee__dot"></span>
+      <span>Laptop</span><span class="marquee__dot"></span>
+      <span>Charger</span><span class="marquee__dot"></span>
+      <span>Gym bag</span><span class="marquee__dot"></span>
+      <span>Homework</span><span class="marquee__dot"></span>
+      <span>Never Leave Without What You Need</span><span class="marquee__dot"></span>
+    </div>
+  </div>
+</div>
+
+<section class="statement" data-statement>
+  <p data-words="learns checks alerts">Most people don't lose their stuff. They just walk out the door without it. ReadyCheck learns what you need, checks whether you have it, and alerts you before you leave without it.</p>
+</section>
+
+<section class="problem">
+  <div class="container">
+    <div class="problem__head rv" data-rv>
+      <div class="section-head">
+        <span class="eyebrow">The problem</span>
+        <h2 class="h2">Forgetting stuff is normal. Turning around for it shouldn't be.</h2>
+      </div>
+      <p class="problem__source">From the ReadyCheck customer survey, original analysis of 44 responses.</p>
+    </div>
+    <div class="stats stg" data-rv data-countup>
+      <div class="stat lift">
+        <span class="stat__num"><span data-count="47.7">47.7</span>%</span>
+        <span class="stat__label">forget something important at least once a week</span>
+        <span class="bar"><span style="--w:47.7%"></span></span>
+      </div>
+      <div class="stat stat--dark lift">
+        <span class="stat__num"><span data-count="79.6">79.6</span>%</span>
+        <span class="stat__label">say an automatic reminder system would be at least somewhat helpful</span>
+        <span class="bar"><span style="--w:79.6%"></span></span>
+      </div>
+      <div class="stat lift">
+        <span class="stat__num"><span data-count="59.1">59.1</span>%</span>
+        <span class="stat__label">go to three or more places on a typical weekday</span>
+        <span class="bar"><span style="--w:59.1%"></span></span>
+      </div>
+    </div>
+    <div class="concerns rv" data-rv>
+      <div class="concerns__copy">
+        <h3>What people worried about</h3>
+        <p>We asked what would hold people back. These are the problems we are designing around: price, setup and tags.</p>
+      </div>
+      <div class="concerns__bars">
+        <div class="concern">
+          <div class="concern__row"><span>High purchase price</span><span>59.1%</span></div>
+          <span class="bar"><span style="--w:59.1%"></span></span>
+        </div>
+        <div class="concern">
+          <div class="concern__row"><span>Complicated setup</span><span>50%</span></div>
+          <span class="bar"><span style="--w:50%"></span></span>
+        </div>
+        <div class="concern">
+          <div class="concern__row"><span>Attaching tags to belongings</span><span>40.9%</span></div>
+          <span class="bar"><span style="--w:40.9%"></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="how">
+  <div class="container">
+    <div class="section-head rv" data-rv>
+      <span class="eyebrow eyebrow--dark">How it works</span>
+      <h2 class="h2">Three parts. One simple job.</h2>
+    </div>
+    <div class="how__body">
+      <div class="how__visual">
+        <div class="how__stage">
+          <div class="how__slide is-active" data-slide>
+            <div class="how__slide-top"><span class="how__bignum">01</span><span class="how__photo">Photo: tags on everyday items</span></div>
+            <div class="placeholder"></div>
+            <div class="how__chip">Tag added: Gym bag</div>
+          </div>
+          <div class="how__slide" data-slide>
+            <div class="how__slide-top"><span class="how__bignum">02</span><span class="how__photo">Photo: the ReadyCheck app</span></div>
+            <div class="placeholder"></div>
+            <div class="how__chip how__chip--blue">Tuesdays: Basketball bag added</div>
+          </div>
+          <div class="how__slide" data-slide>
+            <div class="how__slide-top"><span class="how__bignum">03</span><span class="how__photo">Photo: sensor by the front door</span></div>
+            <div class="placeholder"></div>
+            <div class="how__chip how__chip--warn">Basketball bag not detected</div>
+          </div>
+        </div>
+        <div class="how__progress" aria-hidden="true"><span class="is-on"></span><span></span><span></span></div>
+      </div>
+      <div class="how__steps">
+        <div class="step is-active" data-step>
+          <span class="step__num">01</span>
+          <h3>Tag it.</h3>
+          <p>Attach small wireless tags to the things you carry most, like keys, backpacks, laptops, chargers and gym bags.</p>
+          <ul>
+            <li><span class="check-sm"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Only tag what you want checked</li>
+            <li><span class="check-sm"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Add or remove items in the app</li>
+          </ul>
+        </div>
+        <div class="step" data-step>
+          <span class="step__num">02</span>
+          <h3>It learns.</h3>
+          <p>For the first 2 to 3 weeks, ReadyCheck&rsquo;s AI learns which items leave with you on which days.</p>
+          <ul>
+            <li><span class="check-sm"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Builds a routine for each day</li>
+            <li><span class="check-sm"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Gets more personal over time</li>
+          </ul>
+        </div>
+        <div class="step" data-step>
+          <span class="step__num">03</span>
+          <h3>It checks.</h3>
+          <p>When you head out, the sensor by your door looks for the day&rsquo;s items. Missing one? Your phone gets an alert.</p>
+          <ul>
+            <li><span class="check-sm"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Checks before you leave, not after</li>
+            <li><span class="check-sm"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Override any reminder when plans change</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="routines" class="routines" data-gallery>
+  <div class="routines__sticky">
+    <div class="container routines__head">
+      <div class="section-head">
+        <span class="eyebrow">Routines</span>
+        <h2 class="h2">One system. Every kind of week.</h2>
+      </div>
+      <span class="routines__hint">Keep scrolling</span>
+    </div>
+    <div class="routines__viewport">
+      <div class="routines__track" data-track>
+        <article class="routine">
+          <div class="routine__img"></div>
+          <div class="routine__body">
+            <span class="routine__num">01 / 06</span>
+            <h3>The student</h3>
+            <p>School every weekday, with a different bag for practice days.</p>
+            <div class="tags"><span>Backpack</span><span>Laptop</span><span>Charger</span></div>
+          </div>
+        </article>
+        <article class="routine routine--dark">
+          <div class="routine__img"></div>
+          <div class="routine__body">
+            <span class="routine__num">02 / 06</span>
+            <h3>Practice days</h3>
+            <p>Basketball on Tuesdays and Thursdays means the bag gets checked those days.</p>
+            <div class="tags"><span>Basketball bag</span><span>Tue</span><span>Thu</span></div>
+          </div>
+        </article>
+        <article class="routine routine--blue">
+          <div class="routine__img"></div>
+          <div class="routine__body">
+            <span class="routine__num">03 / 06</span>
+            <h3>The commuter</h3>
+            <p>Out the door fast with everything needed for work.</p>
+            <div class="tags"><span>Keys</span><span>Wallet</span><span>Laptop</span></div>
+          </div>
+        </article>
+        <article class="routine">
+          <div class="routine__img"></div>
+          <div class="routine__body">
+            <span class="routine__num">04 / 06</span>
+            <h3>Gym after work</h3>
+            <p>Gets a reminder on the days the gym bag usually comes along.</p>
+            <div class="tags"><span>Gym bag</span><span>Charger</span></div>
+          </div>
+        </article>
+        <article class="routine routine--dark">
+          <div class="routine__img"></div>
+          <div class="routine__body">
+            <span class="routine__num">05 / 06</span>
+            <h3>Family mornings</h3>
+            <p>A busy household with lots of schedules and one front door.</p>
+            <div class="tags"><span>Backpacks</span><span>Homework</span><span>Keys</span></div>
+          </div>
+        </article>
+        <article class="routine routine--blue">
+          <div class="routine__img"></div>
+          <div class="routine__body">
+            <span class="routine__num">06 / 06</span>
+            <h3>Plans changed</h3>
+            <p>No practice this week? Skip the reminder or edit the day in the app.</p>
+            <div class="tags"><span>Override</span><span>Edit items</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="container routines__bar-wrap"><span class="routines__bar"><span></span></span></div>
+  </div>
+</section>
+
+<section id="demo" class="demo">
+  <div class="container">
+    <div class="section-head rv" data-rv>
+      <span class="eyebrow">Try it</span>
+      <h2 class="h2">See what ReadyCheck would check.</h2>
+      <p class="lead">Example routine: a student with school every weekday and basketball on Tuesdays and Thursdays. Pick a day, then tap an item to leave it behind.</p>
+    </div>
+    <div class="demo__grid rv rv-s" data-rv>
+      <div class="demo__panel">
+        <div class="days" role="group" aria-label="Pick a day" data-days>
+          <span class="days__ind" aria-hidden="true"></span>
+          <button type="button" data-day="Mon" aria-pressed="false">Mon</button>
+          <button type="button" data-day="Tue" aria-pressed="true">Tue</button>
+          <button type="button" data-day="Wed" aria-pressed="false">Wed</button>
+          <button type="button" data-day="Thu" aria-pressed="false">Thu</button>
+          <button type="button" data-day="Fri" aria-pressed="false">Fri</button>
+        </div>
+        <div class="items" data-items></div>
+      </div>
+      <div class="door">
+        <span class="ring"></span>
+        <div class="door__head">
+          <span class="door__label">At the front door</span>
+          <span class="door__day" data-dayname>Tuesday</span>
+        </div>
+        <div class="door__status" data-status aria-live="polite"></div>
+        <p class="door__note">Schedule changed? Edit your items or skip a reminder in the app anytime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" class="shop">
+  <div class="container">
+    <div class="section-head rv" data-rv>
+      <span class="eyebrow">Shop</span>
+      <h2 class="h2">Keep it simple.</h2>
+      <p class="lead">One kit to start. Add tags whenever you want.</p>
+    </div>
+    <div class="shop__grid">
+      <div class="kit rv rv-l" data-rv>
+        <div class="kit__img clip" data-rv>Product photo: Starter Kit</div>
+        <div class="kit__body">
+          <div class="kit__title">
+            <h3>ReadyCheck Starter Kit</h3>
+            <span class="badge">Start here</span>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Starter Kit details" data-tabs>
+            <span class="tabs__ind" aria-hidden="true"></span>
+            <button type="button" role="tab" id="kit-tab-0" aria-controls="kit-panel" aria-selected="true">In the box</button>
+            <button type="button" role="tab" id="kit-tab-1" aria-controls="kit-panel" aria-selected="false" tabindex="-1">Setup</button>
+            <button type="button" role="tab" id="kit-tab-2" aria-controls="kit-panel" aria-selected="false" tabindex="-1">The app</button>
+          </div>
+          <ul class="tabpanel" role="tabpanel" id="kit-panel" aria-labelledby="kit-tab-0" data-tabpanel>
+            <li><span>1</span>1 ReadyCheck door sensor</li>
+            <li><span>2</span>A set of wireless tags</li>
+            <li><span>3</span>Access to the ReadyCheck app</li>
+          </ul>
+          <div class="kit__foot">
+            <span>Price coming soon</span>
+            <a class="btn btn--light" href="#waitlist">Join the waitlist</a>
+          </div>
+        </div>
+      </div>
+      <div class="shop__side stg" data-rv>
+        <div class="product lift">
+          <div class="product__img"></div>
+          <div class="product__body">
+            <h3>Extra Tag Pack</h3>
+            <p>Add more belongings to your routine anytime.</p>
+            <span class="product__price">Price coming soon</span>
+          </div>
+        </div>
+        <div class="product product--blue lift">
+          <div class="product__img"></div>
+          <div class="product__body">
+            <h3>ReadyCheck App</h3>
+            <p>Add items, set routines and override reminders when plans change.</p>
+            <span class="product__price">Included with every kit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="compare">
+  <div class="container">
+    <div class="section-head rv" data-rv>
+      <span class="eyebrow">Why ReadyCheck</span>
+      <h2 class="h2">Trackers find lost things. ReadyCheck helps you not lose them.</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col"><span class="sr-only">Feature</span></th>
+            <th scope="col" class="us">ReadyCheck</th>
+            <th scope="col">Bluetooth trackers</th>
+            <th scope="col">Phone reminders</th>
+          </tr>
+        </thead>
+        <tbody class="stg stg-side" data-rv>
+          <tr>
+            <th scope="row">Learns which items you need on which days</th>
+            <td class="us yes">Yes</td>
+            <td>No</td>
+            <td>Only if you set it up</td>
+          </tr>
+          <tr>
+            <th scope="row">Checks those items are with you before you leave</th>
+            <td class="us yes">Yes</td>
+            <td>Some offer left-behind alerts</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <th scope="row">Helps find an item after it's lost</th>
+            <td class="us">Not the focus</td>
+            <td class="yes-other">Yes</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="container">
+    <h2 class="h2 rv" data-rv>Questions</h2>
+    <div class="faq__list stg" data-rv data-faq>
+      <div class="faq__item is-open">
+        <button type="button" aria-expanded="true" aria-controls="faq-0" id="faq-q-0"><span>Is ReadyCheck available yet?</span><span class="faq__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></button>
+        <div class="faq__rows" id="faq-0" role="region" aria-labelledby="faq-q-0"><div><p>Not yet. ReadyCheck is a concept in development. Join the waitlist to hear when it launches.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button type="button" aria-expanded="false" aria-controls="faq-1" id="faq-q-1"><span>How long does it take to learn my routine?</span><span class="faq__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></button>
+        <div class="faq__rows" id="faq-1" role="region" aria-labelledby="faq-q-1"><div><p>About 2 to 3 weeks of normal use. During that time it learns which items you bring on which days.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button type="button" aria-expanded="false" aria-controls="faq-2" id="faq-q-2"><span>What if my schedule changes?</span><span class="faq__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></button>
+        <div class="faq__rows" id="faq-2" role="region" aria-labelledby="faq-q-2"><div><p>The AI will not always be right, so you stay in control. Change which items you need on any day in the app, or skip a reminder.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button type="button" aria-expanded="false" aria-controls="faq-3" id="faq-q-3"><span>Do I have to tag everything I own?</span><span class="faq__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></button>
+        <div class="faq__rows" id="faq-3" role="region" aria-labelledby="faq-q-3"><div><p>No. Only tag the things you want ReadyCheck to check for, like keys, a backpack or a laptop.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button type="button" aria-expanded="false" aria-controls="faq-4" id="faq-q-4"><span>Is it just another tracker?</span><span class="faq__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></button>
+        <div class="faq__rows" id="faq-4" role="region" aria-labelledby="faq-q-4"><div><p>No. Trackers help you find something after it is lost. ReadyCheck is built to stop you from leaving without it in the first place.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button type="button" aria-expanded="false" aria-controls="faq-5" id="faq-q-5"><span>How much will it cost?</span><span class="faq__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></button>
+        <div class="faq__rows" id="faq-5" role="region" aria-labelledby="faq-q-5"><div><p>Pricing is not set yet. Our goal is a Starter Kit that students and families can realistically afford.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="waitlist" class="waitlist">
+  <div class="cta rv rv-s" data-rv>
+    <span class="ring"></span><span class="ring ring--2"></span><span class="ring ring--3"></span>
+    <h2>Be the first to leave ready.</h2>
+    <p>Get launch news and early access when ReadyCheck is ready.</p>
+    <!-- TODO: point this form at a real waitlist endpoint (action/method) -->
+    <form data-waitlist>
+      <label for="rc-email" class="sr-only">Email address</label>
+      <input id="rc-email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
+      <button type="submit" class="btn btn--primary">Join the waitlist</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__about">
+        <span class="footer__tagline">Never Leave Without What You Need.</span>
+        <span>A student business concept by Lucas Goldman and Ross Kantor.</span>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <span>Product</span>
+          <a class="navlink" href="#how">How it works</a>
+          <a class="navlink" href="#routines">Routines</a>
+          <a class="navlink" href="#shop">Shop</a>
+        </div>
+        <div class="footer__col">
+          <span>More</span>
+          <a class="navlink" href="#demo">Try it</a>
+          <a class="navlink" href="#faq">FAQ</a>
+          <a class="navlink" href="#waitlist">Waitlist</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__word rv" data-rv aria-hidden="true">ReadyCheck</div>
+  </div>
+</footer>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
